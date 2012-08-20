@@ -30,7 +30,7 @@ public class StepDef_GoogleTabs {
         driver.findElement(By.id("gb_23")).click();
     }
 
-    @Then("^browser.*")
+    @Then("^browser should show create gmail account field$")
     public void cardShouldBeReturned() {
            assertTrue(driver.findElement(By.linkText("Create an account")).isDisplayed());
         driver.findElement(By.linkText("Create an account")).click();
