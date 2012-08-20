@@ -8,7 +8,7 @@ import static java.lang.System.*;
  * Time: 8:07 PM
  * To change this template use File | Settings | File Templates.
  */
-public class TestDrive1 {
+public class TestRun_zbox {
 
 
     //private TemperatureServer t = new TemperatureServer(10);

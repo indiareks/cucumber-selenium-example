@@ -16,11 +16,11 @@ import static org.junit.Assert.assertTrue;
  * Time: 3:34 PM
  * To change this template use File | Settings | File Templates.
  */
-public class GoogleTabsStepdefs {
+public class StepDef_GoogleTabs {
 
     private final WebDriver driver;
 
-    public GoogleTabsStepdefs(SharedDriver driver) {
+    public StepDef_GoogleTabs(SharedDriver driver) {
         this.driver = driver;
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }

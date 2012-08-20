@@ -12,14 +12,14 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
 
         </dependency>
 
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
         </dependency>
 
         <dependency>
@@ -50,7 +50,7 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
         </dependency>
     </dependencies>
 
@@ -59,7 +59,7 @@
 
         <testResources>
             <testResource>
-                <directory> src/test/testResources</directory>
+                <directory>src/test/resources</directory>
             </testResource>
             <testResource>
                 <directory> src/test/stories</directory>

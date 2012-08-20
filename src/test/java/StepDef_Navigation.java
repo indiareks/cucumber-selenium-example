@@ -3,10 +3,10 @@
 import cucumber.annotation.en.Given;
 import org.openqa.selenium.WebDriver;
 
-public class NavigationStepdefs {
+public class StepDef_Navigation {
     private final WebDriver driver;
 
-    public NavigationStepdefs(SharedDriver webDriver) {
+    public StepDef_Navigation(SharedDriver webDriver) {
         this.driver = webDriver;
 
     }

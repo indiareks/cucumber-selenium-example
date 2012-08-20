@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class TemperatureStepdefs {
+public class StepDef_Temperature {
     private final WebDriver webDriver;
 
 
-    public TemperatureStepdefs(SharedDriver webDriver) {
+    public StepDef_Temperature(SharedDriver webDriver) {
         this.webDriver = webDriver;
     }
 
