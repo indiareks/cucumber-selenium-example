@@ -15,12 +15,12 @@ public class StepDef_Temperature {
         this.webDriver = webDriver;
     }
 
-    @When("^I enter (.+) Celcius$")
+    @When("^I enter ([\\d.]+) Celcius$")
     public void i_enter_Celcius(double celcius) {
         webDriver.findElement(By.id("celcius")).sendKeys(String.valueOf(celcius));
     }
 
-    @Then("^I should see (.+) Fahrenheit$")
+    @Then("^I should see ([\\d.]+) Fahrenheit$")
     public void i_should_see_Fahrenheit(double fahrenheit) {
         assertEquals(String.valueOf(fahrenheit), webDriver.findElement(By.id("fahrenheit")).getAttribute("value"));
     }

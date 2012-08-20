@@ -55,7 +55,7 @@
     </dependencies>
 
 
-    <build>
+    <!--build>
 
         <testResources>
             <testResource>
@@ -88,6 +88,6 @@
             </plugin>
         </plugins>
 
-    </build>
+    </build-->
 
 </project>
