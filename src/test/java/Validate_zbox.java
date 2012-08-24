@@ -1,5 +1,7 @@
+import org.junit.Before;
 import org.junit.Test;
-import static java.lang.System.*;
+
+import static java.lang.System.out;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,17 +10,30 @@ import static java.lang.System.*;
  * Time: 8:07 PM
  * To change this template use File | Settings | File Templates.
  */
-public class TestRun_zbox {
-
-
+public class Validate_zbox {
     //private TemperatureServer t = new TemperatureServer(10);
    // private TemperatureServer t2 = new TemperatureServer(10);
+    // public static final WebDriver driver1 = new FirefoxDriver();
 
     private String t = "kph"     ;
     private String t2 = "kph"     ;
 
+   static {
+       //WebDriver driver = new FirefoxDriver();
 
-    @Test
+   }
+   public Validate_zbox(){
+        System.out.println("defaulst qqqqqqqqqqqq ");
+
+    }
+
+    @Before
+    public  void beforec(){
+        System.out.println("BeforeClass ");
+
+    }
+
+  @Test
    public void test1(){
 
         String i=new String("dfd");
@@ -31,13 +46,10 @@ public class TestRun_zbox {
 
         out.println(t2.hashCode());
         out.println(t2);
-
-
-
-
+   }
 
     }
 
 
 
-}
+
