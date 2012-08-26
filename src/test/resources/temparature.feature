@@ -1,3 +1,4 @@
+@temp
 Feature: Temperature conversion
 
   Scenario: 0 Celcius to Fahrenheit
@@ -9,4 +10,3 @@ Feature: Temperature conversion
     Given I am on the front page
     When I enter 100 Celcius
     Then I should see 212 Fahrenheit
-    **/

@@ -1,3 +1,4 @@
+@reg
 Feature: Google Tabs redirection
 
 Scenario: test google tabs

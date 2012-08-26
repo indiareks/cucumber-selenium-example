@@ -1,40 +1,31 @@
-import cucumber.annotation.en.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
 
-import java.util.concurrent.TimeUnit;
+import static java.lang.System.out;
 
-import static org.junit.Assert.assertTrue;
-
-/**
- * Created with IntelliJ IDEA.
- * User: kphani
- * Date: 20/8/12
- * Time: 6:18 PM
- * To change this template use File | Settings | File Templates.
- */
 public class StepDef_Hotmail {
-    private final WebDriver driver;
+   // private final WebDriver driver=null;
 
-    public StepDef_Hotmail(SharedDriver driver) {
+   /** public StepDef_Hotmail(SharedDriver driver) {
         this.driver = driver;
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }**/
+
+    @Given("^I am on the blank web (.*)")
+    public void I_am_on_the_blank_web_firefox(String arg1) throws Throwable {
+        out.println(arg1);
+        }
+
+    @When("^go I to (.*) home page$")
+    public void go_I_to_gmail_home_page(String arg1) throws Throwable {
+        out.println(arg1);
     }
 
-       @Given("^I am on the blank web browser$")
-    public void I_am_on_the_blank_web_browser() throws Throwable {
-           driver.get("");
-            }
-
-    @When("^go I to Hot mail home page$")
-    public void go_I_to_Hot_mail_home_page() throws Throwable {
-       driver.get("http://www.hotmail.co.uk");
-    }
-
-    @Then("^browser should show login and password fields$")
-    public void basicElementCheck() {
-        assertTrue(driver.findElement(By.id("i0116")).isDisplayed());
-        assertTrue(driver.findElement(By.id("idDiv_PWD_PasswordExample")).isDisplayed());
+    @Then("^browser should show the (.*)")
+    public void browser_should_show_the_login(String arg1) throws Throwable {
+        out.println(arg1);
 
     }
+
 }

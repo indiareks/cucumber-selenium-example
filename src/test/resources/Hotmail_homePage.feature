@@ -1,5 +1,5 @@
 @temp
-Feature: Check basic elements in Hotmail homepage
+Feature: Hotmail homepage
 
 Scenario Outline:    browser mail example
 Given I am on the blank web <browser>
